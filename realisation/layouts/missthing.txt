@@ -1,0 +1,11 @@
+Mon espace:
+-refaire l'input dans la 2eme table(changer vos coordonée)
+-régler la partie ajouter des cv sur le table 1 
+-Les couleurs a refaire
+Entretien:
+-A refaire il manque beaucoup de place a droite et a gauche
+Espace_recruteur
+Couleur
+
+
+Navbar+footer+logo a det
