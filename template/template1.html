@@ -1,23 +1,424 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <meta name="description" content="">
     <meta property="og:locale" content="fr_FR" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="" />
-	<meta property="og:description" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1164413ddc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/1164413ddc.js" crossorigin="anonymous"></script>
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/temp1.css">
+    <style>
+        input.form-control {width: 60%;}
+        section {
+            border-radius: 8px;
+        }
+
+        h3.Compmid {
+            text-align: center;
+        }
+
+        img.diag {
+            height: 90% !important;
+            width: 80% !important;
+        }
+    </style>
 
 </head>
+<body>
+<main>
 
+<section id="profile-section">
+    <div class="prez" style="border-right-width: 2px;margin-top: 20px;">
+        <br>
+        <div class="row">
+            <div class="circle" style="cursor:pointer;">
+                <img class="circle" src="img/steve.jpg" height="300" width="300">
+            </div>
+            <div class="offset-2" style="margin-left:35px";>
+                <br>
+                <br>
+                <br>
+                <h1 class="workname" style="color:#290001;font-weight:700;font-size:35px!important;text-transform: uppercase;">Software Engineering</h1>
+            </div>
+        </div>
+        <br>
+        <hr style="width: 50%;margin-left: 150px;">
+        <h1 style="color:rgb(169 143 27);">A propos de moi</h1>
+        <p style="padding-top: 20px;">To rejoin Apple and take all I've learned in the 11 years since I leftto save the company and turn it into
+            something remarkable</p>
+        <br>
+    </div>
+    <div class="contact" style="
+    padding-top: 40px;
+    padding-left: 80px;
+">
+
+        <h2 style="color:#290001;font-weight: 500"> </i>Informations </h2>
+        
+        <div class="contact-flex">
+            <p><i class="fas fa-info-circle"></i><span style="color:rgb(169 143 27);text-decoration: underline;font-size: 18px;padding-left: 5px;font-weight: 600;">Nom :</span> </p>
+            <input class="form-control" type="text" placeholder="Sykzen" readonly>
+        </div>
+        <div class="contact-flex">
+            <p><i class="fas fa-map-marker-alt"></i><span style="color:rgb(169 143 27);text-decoration: underline;font-size: 18px;padding-left: 5px;font-weight: 600;">Adresse : </span></p>
+            <input class="form-control" type="text" placeholder="chonzilizi" readonly>
+        </div>
+        <div class="contact-flex">
+            <p><i class="fas fa-phone-alt"></i><span style="color:rgb(169 143 27);text-decoration: underline;font-size: 18px;padding-left: 5px;font-weight: 600;">Téléphone :</span></p>
+            <input class="form-control" type="text" placeholder="+4144884155" readonly>
+        </div>
+        <div class="contact-flex">
+            <p><i class="fas fa-envelope"></i><span style="color:rgb(169 143 27);text-decoration: underline;font-size: 18px;padding-left: 5px;font-weight: 600;">Mail : </span></p>
+            <input class="form-control" type="text" placeholder="sykzen@gmail.com" readonly>
+        </div>
+        <div class="contact-flex">
+            <p><i class="fas fa-car"></i><span style="color:rgb(169 143 27);text-decoration: underline;font-size: 18px;padding-left: 5px;font-weight: 600;">Permis :</span></p>
+            <input class="form-control" type="text" placeholder="B" readonly>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6" style="padding-top: 20px;">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        <p title="https://github.com/Sykzen" style=" width: 200px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        "><i class="fab fa-github" style="font-size:20px;"></i><a
+                                href="https://github.com/Sykzen">&nbsp;&nbsp;&nbsp;https://github.com/Sykzen</a></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="text-overflow: ellipsis" ;><a
+                                href="https://github.com/Sykzen?tab=repositories">Repositories: <span
+                                    class="scraping">10</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6" style="padding-top: 20px;">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        <p title="https://www.linkedin.com/in/williamhgates/" style=" width: 200px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        "><i class="fab fa-linkedin" style="color:darkcyan; font-size:20px;"></i><a
+                                href="https://www.linkedin.com/in/williamhgates/">&nbsp;&nbsp;&nbsp;https://www.linkedin.com/in/williamhgates/</a>
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Relations: 500+</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------BLOC 2 EXPERIENCE PROFESIONELLE------------------------------------------------------------------------------------------->
+<section> <span>{sum} </span>
+    <h2 style="text-align: center; "><img src="https://img.icons8.com/plasticine/60/000000/work.png"/><span style="color:#290001;font-weight: 700;">&nbsp;Expérience Professionnelle</span></h2>
+    <div class="exp">
+
+        <div class="exp-logo">
+            <a href="#"><img src="img/entrep1.png">Voir plus</a>
+        </div>
+        <div class="exp-info">
+            <h3 style="color:rgb(169 143 27);">Développeur Backend</h3>
+            <h4>N mois</h4>
+        </div>
+        <div class="exp-desc">
+            <p>Développement d'une application Anti Covid</p>
+            <p>Node.js , MangoDB,Express.js,Angular.js</p>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="exp-logo">
+            <a href="#"><img src="img/perso.png" alt="Logo de Github">Voir plus</a>
+        </div>
+        <div class="exp-info">
+            <h3 style="color:rgb(169 143 27);">Projet Personnelles Open source</h3>
+            <h4>13 projet personelle <a href="#">(disponible ici)</a></h4>
+        </div>
+        <div class="exp-desc">
+            <p>Jeux en 2d,chat de rencontre,app de to do list, ...</p>
+            <p>Node.js , MangoDB,Express.js,Angular.js</p>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="exp-logo">
+            <a href="#"><img src="img/entrep2.png" alt="Logo de Atros">Voir plus</a>
+        </div>
+        <div class="exp-info">
+            <h3 style="color:rgb(169 143 27);">Stage Data analyste</h3>
+            <h4>Atos</h4>
+            <h4>N mois</h4>
+        </div>
+        <div class="exp-desc">
+            <p>Initiation a la Data et conception d'algorithme de machine learning</p>
+            <p>Hapdoop,Apach,python,R,SQL,OracleDb</p>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------BLOC 3 Formation ---------------------------------------------------->
+
+<section>
+    <h2 style="text-align: center; "><img src="https://img.icons8.com/officel/60/000000/diploma.png"/><span style="color:#290001;font-weight: 700;">&nbsp;Formation</span>
+    </h2>
+    <div class="exp">
+        <div class="exp-logo">
+            <a href="#"><img src="img/sup1.png" alt="Logo Formation">Voir plus</a>
+        </div>
+        <div class="exp-info">
+            <h3 style="color:rgb(169 143 27);">Master Spé</h3>
+            <hr style="max-width: 15%;">
+            <h4>Cybersécurité<a href="#">&nbsp;(Voir programme )</a></h4>
+        </div>
+        <div class="exp-desc">
+            <p>Framework/language appris</p>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="exp-logo">
+            <a href="#"><img src="img/sup1.png" alt="Logo Formation">Voir plus</a>
+        </div>
+        <div class="exp-info">
+            <h3 style="color:rgb(169 143 27);">M1 et M2</h3>
+            <hr style="max-width: 15%;">
+            <h4>Cybersécurité<a href="#">&nbsp;(Voir programme )</a></h4>
+        </div>
+        <div class="exp-desc">
+            <p>Framework/language appris</p>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="exp-logo">
+            <a href=""><img src="img/sup1.png" alt="Logo Formation"> Voir plus</a>
+        </div>
+        <div class="exp-info">
+            <h3 style="color:rgb(169 143 27);">License</h3>
+            <hr style="max-width: 15%;">
+            <h4>Informatique<a href="#">&nbsp;(Voir programme )</a></h4>
+        </div>
+        <div class="exp-desc">
+            <p>Framework/language appris</p>
+        </div>
+    </div>
+</section>
+<!--------------------------------------BLOC 4 Compétences---------------------------------------------------->
+<section>
+    <h2 style="text-align: center;"><img src="https://img.icons8.com/officel/60/000000/knowledge-sharing.png"/><span style="color:#290001;font-weight: 700;">&nbsp;Compétences</span>
+    </h2>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!--------------------------------------BLOC 4-1 Savoir faire---------------------------------------------------->
+    <div class="row">
+        <div class="col-md-6" style="border-right:2px solid #ccc; border-bottom:2px solid #ccc;padding-bottom: 80px; padding-right: 100px;">
+            <h3 class="Compmid" style="color:rgb(169 143 27);margin-bottom: 120px;text-decoration: underline;font-weight:600;">Savoir faire</h3>
+            <ul>
+                <li>Front-End (logo,design,maquette,page internet,...) en <strong><span>Framework 1</span></strong></li>
+                <li>Back-End d'une application Web (Script,Authentification,chat,Système de paiement sécurisée ...) en <strong><span>Framework 2</span></strong></li>
+                <li>Algorithmique d'un/une (script,problème,étude ...) en <strong><span>Python</span></strong></li>
+                <li>Crée une base de données (d'utulisateurs, de data, d'une étude ...) en <strong><span>MangoDB,MySQL</span></strong></li>
+                <li>Réseaux Création d'un serveur personelle en <strong><span>Apach</span></strong></li>
+                <li>Hébergement déploiement d'application web en <strong><span> AWS</span></strong></li>
+            </ul>
+        </div>
+        <!--------------------------------------BLOC 4-2 Conaissance Informatique---------------------------------------------------->
+
+        <div class="col-md-6" style="border-bottom:2px solid #ccc;padding-left: 35px;">
+            <h3 class="Compmid" style="color:rgb(169 143 27);margin-bottom: 60px;text-decoration: underline;font-weight:600;">Connaissance informatique</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-database"></i>Base de données</h3>
+                    <hr>
+                    <h5><img class="logoOf64px" src="img/sql.png" style="width: 45px;">&nbsp;&nbsp;&nbsp;MySQL</h5> 
+                    <hr>
+                    <h5><img src="https://img.icons8.com/color/45/000000/mongodb.png"/>&nbsp;&nbsp;&nbsp;MongoDB</h5>
+                    
+                </div>
+                <div class="col-md-6">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-laptop-code"></i>Framework</h3>
+                    <hr>
+                    <h5><img src="https://img.icons8.com/color/45/000000/nodejs.png"/> &nbsp;&nbsp;&nbsp;Node.js</h5>
+                    <hr>
+                    <h5><img src="https://img.icons8.com/officel/50/000000/php-logo.png"/>&nbsp;&nbsp;&nbsp;PHP</h5>
+
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-copyright"></i> Programmation</h3>
+                    <hr>
+                <h5><img src="https://img.icons8.com/color/45/000000/python.png"/>&nbsp;&nbsp;&nbsp;Python</h5> 
+                <hr>
+                <h5><img src="https://img.icons8.com/color/45/000000/java-coffee-cup-logo.png"/>&nbsp;&nbsp;&nbsp;Java</h5>
+                </div>
+                <div class="col-md-6">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-internet-explorer"></i>Web Design</h3>
+                    <hr>
+                    <h5><img src="https://img.icons8.com/color/45/000000/html-5.png"/>&nbsp;&nbsp;&nbsp;HTML5 &nbsp;&nbsp;  / &nbsp;<img src="https://img.icons8.com/color/45/000000/css3.png"/>CSS3</h5>
+                    <hr>
+                    <h5><img src="https://img.icons8.com/color/45/000000/bootstrap.png"/>&nbsp;&nbsp;&nbsp;Bootstrap</h5>
+                </div>
+            </div>
+
+
+
+
+            </div>
+        </div>
+        <!--------end col md-6------------->
+    </div>
+    <!--------end row bloc(1-2)------------->
+
+    <!--------------------------------------BLOC 4-2  (Savoir être)---------------------------------------------------->
+
+    <div class="row">
+        <div class="col-md-6" style="border-right:2px solid #ccc;margin-bottom: 40px;">
+            <h3 class="Compmid" style="color:rgb(169 143 27);text-decoration: underline;font-weight:600;">Soft skills</h3>
+            <img class="diag" src="img/comp.png" style="height: 400px; width:400px;;">
+        </div>
+        <!--------------------------------------BLOC 4-3 (Langue)---------------------------------------------------->
+        <div class="col-md-6">
+            <h3 class="Compmid" style="color:rgb(169 143 27);text-decoration: underline;font-weight:600;">Langue</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="comp1">
+                <p style="text-align: center;">Anglais</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="comp1">
+                <p style="text-align: center;">Russe</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="comp3">
+                <p style="text-align: center;">Espagnol</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+<!------------------------------------------------------------------------------------Autre-------------------------------------------------------------------------------->
+<section>
+    <div class="container">
+        <div id="Autre" >
+          <div class="certf" style="border-right:2px solid #ccc">
+            <h2 style="text-align: center; "><i class="fas fa-file-signature"></i><span style="color:#290001;font-weight: 700;">&nbsp;Certification</span></h2>
+            <br>
+            <br>
+            <br><br>
+            <ul>
+                <li>obtenue le</li>
+                <li>obtenue le</li>
+                <li>obtenue le</li>
+            </ul>
+          </div>
+          <div class="Ref" style="border-right:2px solid #ccc">
+            <h2 style="text-align: center; "><i class="fas fa-file-signature"></i><span style="color:#290001;font-weight: 700;">&nbsp;Référence</span></h2>
+            <br>
+            <br>
+            <br><br>
+            <ul>
+                <li>Email</li>
+                <li>Liens</li>
+                <li>Email 2</li>
+            </ul>
+          </div>
+          <div class="Centre">
+            <h2 style="text-align: center; "><i class="fas fa-file-signature"></i><span style="color:#290001;font-weight: 700;">&nbsp;Centre d'intérêt</span></h2>
+            <br>
+            <br>
+            <br><br>
+            <ul>
+                <li>Voyage</li>
+                <li>Musique</li>
+                <li>Lecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+</section>
+<div class="text-center"><button type="button" class="btn btn-success">Télecharger en PDF</button>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://img.icons8.com/color/40/000000/double-up.png"/></button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</main>
+</body>
