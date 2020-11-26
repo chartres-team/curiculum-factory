@@ -1,2 +1,0 @@
-django-easy-pdf
-WeasyPrint
