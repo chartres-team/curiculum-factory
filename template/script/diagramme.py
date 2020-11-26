@@ -11,15 +11,11 @@ skills0=['Backend', 'Frontend', 'Algorithme', 'Web scrapping']
 pourcentage0=[40,30,15,15]
 #cliquer sur F5 ou run 
 #Faire marcher un digramme en particulier:
-a=[] #la compétence exemple: a=['python','java']
-b=[] # pourcentage
-#Pour le diagramme en baton:
-#run_baton(a,b)
-#kiviat
-#run_kiviat(a,b)
-#circulaire
-#run_circulaire(a,b)
+a=['Curiosité','Ingénieux','Force de proposition','Prise de recul','réactivité'] #la compétence exemple: a=['python','java']
+b=[60,70,80,40,100] # pourcentage
 
+#Saving the figure as picture
+#run_n_save(a,b,src)  # avec src=le nom que vous vouliez mettre à l'image (chaine de carac)
 
 
 
@@ -67,7 +63,7 @@ def diagramme_circulaire(skills,prcntg):
     plt.axis('equal')
     return plt.show()
 
-def diagramme_kiviat(skills,prcntg,colorxaxis,coloryaxis,linestyle,edgecolor):
+def diagramme_kiviat(skills,prcntg,colorxaxis,coloryaxis,linestyle,edgecolor,src):
     N = len(skills)
     
     x_as = [n / float(N) * 2 * pi for n in range(N)]
@@ -98,6 +94,7 @@ def diagramme_kiviat(skills,prcntg,colorxaxis,coloryaxis,linestyle,edgecolor):
                ha, distance_ax = "right", 1
     
            ax.text(angle_rad, 100 + distance_ax, skills[i], size=10, horizontalalignment=ha, verticalalignment="center")
+    plt.savefig(src)
     plt.show()
 
 def  diagramme_baton(skills2,note,hatch1,hatch2,colorlinewidth,colorbarfilled,colorline,colorlinenonefilled,linestyle,barwidth):
@@ -113,15 +110,17 @@ def  diagramme_baton(skills2,note,hatch1,hatch2,colorlinewidth,colorbarfilled,co
            linewidth = 3)
     plt.yticks(range(len(y1)), skills2)
     plt.show()
+#-------------------------------Runing Part--------------------------------------------------------
 def run():
-    diagramme_baton(skills2,note,hatch1,hatch2,colorlinewidth,colorbarfilled,colorline,colorlinenonefilled,linestyle,barwidth)
+    diagramme_baton(skills2,note,hatch1,hatch2,colorlinewidth,colorbarfilled,colorline,colorlinenonefilled,linestyle,barwidth,src)
     diagramme_kiviat(skills1,pourcentage1,colorxaxis,coloryaxis,linestyle,edgecolor)
     diagramme_circulaire(skills0,pourcentage0)
-def run_baton(a,b):
-    diagramme_baton(a,b,hatch1,hatch2,colorlinewidth,colorbarfilled,colorline,colorlinenonefilled,linestyle,barwidth)
-def run_circulaire(a,b):
+def run_n_save_baton(a,b,src):
+    diagramme_baton(a,b,hatch1,hatch2,colorlinewidth,colorbarfilled,colorline,colorlinenonefilled,linestyle,barwidth,src)
+def run_n_save_circulaire(a,b,src):
     diagramme_circulaire(a,v)
-def run_kiviat(a,b):
-    diagramme_kiviat(a,b,colorxaxis,coloryaxis,linestyle,edgecolor)
-    
-run()
+def run_n_save_kiviat(a,b,src):
+    diagramme_kiviat(a,b,colorxaxis,coloryaxis,linestyle,edgecolor,src)
+#--------------------------------Shell-----------------------------------------------------------
+#run()
+run_n_save_kiviat(a,b,'../img/comp.png')

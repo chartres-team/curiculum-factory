@@ -1,0 +1,31 @@
+Collecting xhtml2pdf
+  Using cached xhtml2pdf-0.2.5.tar.gz (100 kB)
+Requirement already satisfied: html5lib>=1.0 in c:\users\sykze\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from xhtml2pdf) (1.1)
+Collecting pyPdf2
+  Using cached PyPDF2-1.26.0.tar.gz (77 kB)
+Requirement already satisfied: Pillow in c:\users\sykze\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from xhtml2pdf) (7.2.0)
+Requirement already satisfied: reportlab>=3.3.0 in c:\users\sykze\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from xhtml2pdf) (3.5.53)
+Requirement already satisfied: six in c:\users\sykze\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from xhtml2pdf) (1.15.0)
+Collecting python-bidi>=0.4.2
+  Using cached python_bidi-0.4.2-py2.py3-none-any.whl (30 kB)
+Collecting arabic-reshaper>=2.1.0
+  Using cached arabic_reshaper-2.1.1.tar.gz (18 kB)
+Requirement already satisfied: webencodings in c:\users\sykze\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from html5lib>=1.0->xhtml2pdf) (0.5.1)
+Requirement already satisfied: future in c:\users\sykze\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages (from arabic-reshaper>=2.1.0->xhtml2pdf) (0.18.2)
+Requirement already satisfied: setuptools in c:\program files\windowsapps\pythonsoftwarefoundation.python.3.8_3.8.1776.0_x64__qbz5n2kfra8p0\lib\site-packages (from arabic-reshaper>=2.1.0->xhtml2pdf) (49.2.1)
+Building wheels for collected packages: xhtml2pdf, pyPdf2, arabic-reshaper
+  Building wheel for xhtml2pdf (setup.py): started
+  Building wheel for xhtml2pdf (setup.py): finished with status 'done'
+  Created wheel for xhtml2pdf: filename=xhtml2pdf-0.2.5-py3-none-any.whl size=234352 sha256=efb7403fed5588ae21f31d629919db4f491a1b5763416dcb736d1301bbe59122
+  Stored in directory: c:\users\sykze\appdata\local\pip\cache\wheels\6d\a5\a7\30fb2322bd454ae3098b68e02649a57af0f8495737d00918c9
+  Building wheel for pyPdf2 (setup.py): started
+  Building wheel for pyPdf2 (setup.py): finished with status 'done'
+  Created wheel for pyPdf2: filename=PyPDF2-1.26.0-py3-none-any.whl size=61087 sha256=bd35698de39b83f3bf21d2e0c5853b91d2e575f5297340d5c94a7112a1e9c4e9
+  Stored in directory: c:\users\sykze\appdata\local\pip\cache\wheels\b1\1a\8f\a4c34be976825a2f7948d0fa40907598d69834f8ab5889de11
+  Building wheel for arabic-reshaper (setup.py): started
+  Building wheel for arabic-reshaper (setup.py): finished with status 'done'
+  Created wheel for arabic-reshaper: filename=arabic_reshaper-2.1.1-py3-none-any.whl size=16507 sha256=3473f66fb07a5f0a3d0e253c87f1ef11c280749d016d374e69e25aaff3a897db
+  Stored in directory: c:\users\sykze\appdata\local\pip\cache\wheels\66\6d\91\275a18eea3597b127938aef09550ec38594295ef20eeed4e41
+Successfully built xhtml2pdf pyPdf2 arabic-reshaper
+Installing collected packages: pyPdf2, python-bidi, arabic-reshaper, xhtml2pdf
+Successfully installed arabic-reshaper-2.1.1 pyPdf2-1.26.0 python-bidi-0.4.2 xhtml2pdf-0.2.5
